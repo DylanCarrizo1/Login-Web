@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <img src="c:\Users\IK\Downloads\LOGO CHACA.png" alt="Logo" class="form-logo">
+
+        <form id="loginForm">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" maxlength="15" placeholder="Usuario" required>
+            
+            <label for="password">Clave</label>
+            <input type="password" id="password" maxlength="15" placeholder="Clave" required>
+            
+            <div class="button-container">
+                <button type="button" onclick="login()">Ingresar</button>
+                <button type="button" onclick="clearForm()">Borrar</button>
+            </div>
+        </form>
+    </div>
+    <p class="register-message">
+        Si usted no está registrado, haga click <a href="paginas/registro.htm">aquí</a>.
+    </p>
+
+    <footer style="margin-top: 50vh;">
+        <hr>
+    Dylan Carrizo 6°7||E.E.ST.N°6- CHACABUCO MORON
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

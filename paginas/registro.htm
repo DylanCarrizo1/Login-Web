@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .form-container input,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-container button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-registrar {
+            background-color: #007BFF;
+        }
+        .btn-borrar {
+            background-color: #dc3545;
+        }
+
+        .form-logo {
+    position: absolute;
+    top: 10px;
+    right: 30px; 
+    width: 150px;
+    height: 150px;
+}
+
+        footer {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registro</h2>
+        <img src="c:\Users\IK\Downloads\LOGO CHACA.png" alt="Logo" class="form-logo">
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido" required>
+            <select required>
+                <option value="" disabled selected>Tipo de documento</option>
+                <option value="DNI">DNI</option>
+                <option value="Pasaporte">Pasaporte</option>
+            </select>
+            <input type="text" placeholder="Nro de documento" required>
+            <input type="text" placeholder="Contacto" required>
+            <div style="display: flex; justify-content: space-between;">
+                <button type="submit" class="btn-registrar">Registrar</button>
+                <button type="reset" class="btn-borrar">Borrar</button>
+            </div>
+        </form>
+    </div>
+    <footer style="margin-top: 50vh;">
+        <hr>
+    Dylan Carrizo 6°7||E.E.ST.N°6- CHACABUCO MORON
+</footer>
+</body>
+</html>
